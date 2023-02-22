@@ -183,6 +183,8 @@ body {
 
 .hero {
   background-color: var(--title-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -192,8 +194,12 @@ body {
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 .order-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--button-background-color);
   color: var(--order-button-color);
   font-family: inherit;
@@ -222,9 +228,26 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 /* ==================================================Advantages + title for h3 =================================================*/
+
+.container-advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
+  display: flex;
+}
+.advantages-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+.advantages-list-item > .item-title {
+  margin-bottom: 8px;
+}
+
 .item-title {
   color: var(--title-color);
   font-weight: 500;
@@ -233,10 +256,46 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* =========================================work-list========================= */
+
+.container-work-list {
+  padding-bottom: 120px;
+}
+.work-list {
+  display: flex;
+}
+
+.work-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
 /* =================================================our team================================================= */
 
 .our-team {
   background-color: var(--ourteam-background-color);
+}
+.container-our-team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+}
+.team-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-background-color);
+  padding-bottom: 32px;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.team-list-item-title {
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 /* =================================================Potfolio list + унаследование свойств у пэшэк в ссылках а*/
@@ -251,6 +310,13 @@ body {
   background-color: var(--footer-backgroundcolor);
 }
 
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 /* Increase the flow of customers and sales for your business with digital marketing & growth solutions. */
 .page-footer-text {
   color: var(--footer-text-color);
@@ -258,6 +324,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 264px;
+  margin-top: 16px;
 }
 
 /* =================================================Фильтры для портфолио (КНОПКИ)*/
