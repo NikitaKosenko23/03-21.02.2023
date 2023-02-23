@@ -43,8 +43,7 @@ h1,
 h2,
 h3,
 h4,
-p,
-ul {
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -58,6 +57,9 @@ ol {
 img {
   display: block;
 }
+/* a {
+  display: block;
+} */
 
 .list {
   list-style: none;
@@ -263,6 +265,8 @@ body {
 }
 .work-list {
   display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100%-48px / 3);
 }
 
 .work-list-item:not(:last-child) {
@@ -281,6 +285,8 @@ body {
 
 .team-list {
   display: flex;
+  flex-basis: calc(100%-72px / 4);
+  flex-wrap: wrap;
 }
 .team-list-item {
   display: flex;
