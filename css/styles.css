@@ -286,7 +286,7 @@ body {
   flex-wrap: wrap;
 }
 .work-list-item {
-  flex-basis: calc(100%-48px / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .work-list-item:not(:last-child) {
@@ -308,6 +308,7 @@ body {
   flex-wrap: wrap;
 }
 .team-list-item {
+  flex-basis: calc((100% - 72px) / 4);
   text-align: center;
   background-color: var(--main-background-color);
   padding-bottom: 32px;
@@ -350,16 +351,11 @@ body {
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -24px;
-  margin-bottom: -48px;
-
-  /* row-gap: 48px;
-  column-gap: 24px; */
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .portfolio-card {
-  flex-basis: calc(100% / 3 - 24px);
-  margin-right: 24px;
-  margin-bottom: 48px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 /* border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
